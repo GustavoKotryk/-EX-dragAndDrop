@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropzone-hover {
+            background-color: #f0fff4 !important;
+            border-color: #34d399 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex items-center justify-center p-6 bg-gray-900 mb-10">
+        <h1 class="text-5xl font-extrabold text-amber-300 mr-4">TIERLIST TOP</h1>
+        <img src="./img/logo.png" alt="Logo" class="h-16 w-auto">
+    </div>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-6xl px-4">
+
+        <div class="flex flex-col gap-4">
+
+            <div id="coisa_linda" class="tier flex flex-row bg-white rounded-lg border border-gray-200 min-h-[140px] overflow-hidden">
+                <div class="flex items-center justify-center w-32 bg-amber-300">
+                    <div class="text-gray-900 text-lg font-bold p-2 text-center">COISA LINDA</div>
+                </div>
+                <div class="flex-1 p-4 flex flex-row flex-wrap gap-2 dropzone"></div>
+            </div>
+
+            <div id="bomzinho" class="tier flex flex-row bg-white rounded-lg border border-gray-200 min-h-[140px] overflow-hidden">
+                <div class="flex items-center justify-center w-32 bg-amber-300">
+                    <div class="text-gray-900 text-lg font-bold p-2 text-center">BOMZINHO</div>
+                </div>
+                <div class="flex-1 p-4 flex flex-row flex-wrap gap-2 dropzone"></div>
+            </div>
+
+            <div id="tem_melhor" class="tier flex flex-row bg-white rounded-lg border border-gray-200 min-h-[140px] overflow-hidden">
+                <div class="flex items-center justify-center w-32 bg-amber-300">
+                    <div class="text-gray-900 text-lg font-bold p-2 text-center">TEM MELHOR</div>
+                </div>
+                <div class="flex-1 p-4 flex flex-row flex-wrap gap-2 dropzone"></div>
+            </div>
+
+            <div id="lixinho" class="tier flex flex-row bg-white rounded-lg border border-gray-200 min-h-[140px] overflow-hidden">
+                <div class="flex items-center justify-center w-32 bg-amber-300">
+                    <div class="text-gray-900 text-lg font-bold p-2 text-center">LIXINHO</div>
+                </div>
+                <div class="flex-1 p-4 flex flex-row flex-wrap gap-2 dropzone"></div>
+            </div>
+
+        </div>
+
+        <div id="pool-container" class="flex flex-col bg-white rounded-lg border border-gray-200 p-4 mb-10">
+            <h2 class="font-semibold mb-3">Itens</h2>
+            <div id="pool" class="flex flex-row flex-wrap gap-3 dropzone min-h-[100px]">
+
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/garen.png" alt="Garen"
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/aatrox.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/sett.png" alt="Sett"
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/teemo.png" alt="Teemo"
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/drmundo.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/akali.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/ambessa.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/aurora.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/camille.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/chogath.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/darius.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/drmundo.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/fiora.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/gangplank.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/gnar.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/gragas.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/gwen.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/illaoi.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/irelia.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/jax.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/kayle.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/jayce.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/kennen.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/kled.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/ksante.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/malphite.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/nasus.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/olaf.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/ornn.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/pantheon.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/poppy.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/quinn.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/renekton.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/renekton.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/riven.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/rumble.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/rumble.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/shen.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/singed.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/sion.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/tryndamere.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/urgot.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/vayne.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/vladimir.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/volibear.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/warwick.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/warwick.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/yone.png" alt=""
+                        class="h-16 w-16">
+                </div>
+                 <div class="item draggable cursor-grab" draggable="true">
+                    <img src="./img/yorick.png" alt=""
+                        class="h-16 w-16">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+        const dropzones = document.querySelectorAll('.dropzone');
+        let draggedItem = null;
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', (e) => {
+                draggedItem = e.target.closest('.draggable');
+                if (draggedItem) {
+                    draggedItem.style.opacity = '0.5';
+                }
+            });
+
+            draggable.addEventListener('dragend', () => {
+                if (draggedItem) {
+                    draggedItem.style.opacity = '1';
+                    draggedItem = null;
+                }
+            });
+        });
+
+        dropzones.forEach(dropzone => {
+            dropzone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropzone.classList.add('dropzone-hover');
+            });
+
+            dropzone.addEventListener('dragleave', () => {
+                dropzone.classList.remove('dropzone-hover');
+            });
+
+            dropzone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropzone.classList.remove('dropzone-hover');
+                if (draggedItem) {
+                    dropzone.appendChild(draggedItem);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
